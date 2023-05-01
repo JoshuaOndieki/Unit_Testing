@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "tsc",
-    "test": "concurrently --kill-others \"json-server testdb.json --watch\" \"vitest --run --reporter verbose\"",
+    "test": "bash tests/test.sh",
     "test:watch": "vitest",
     "start": "node app"
   },
