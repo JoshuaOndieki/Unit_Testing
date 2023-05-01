@@ -16,6 +16,8 @@ jobs:
       - image: cimg/node:18.16
     steps:
       - checkout
+      - node/install-packages:
+        pkg-manager: npm
       - run: npm test
 
 # Orchestrate our job run sequence
