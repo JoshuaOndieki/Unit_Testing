@@ -8,7 +8,8 @@ jobs:
       - image: cimg/node:18.16
     steps:
       - checkout
-      - node/install-packages
+      - node/install-packages:
+        pkg-manager: npm
       - run: npm run build
   test:
     docker:
