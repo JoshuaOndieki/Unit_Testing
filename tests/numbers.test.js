@@ -1,5 +1,5 @@
 import{it, expect} from 'vitest'
-import { transformToNumber } from './numbers'
+import { transformToNumber } from '../dist/util/numbers'
 
 it('Should return a  number given a string', ()=>{
     const input ="12"

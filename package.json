@@ -1,20 +1,19 @@
 {
-  "name": "basic-testing-frontend",
+  "name": "basic-testing",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "vitest --run --reporter verbose",
+    "build": "tsc",
+    "test": "concurrently --kill-others \"json-server testdb.json --watch\" \"vitest --run --reporter verbose\"",
     "test:watch": "vitest",
-    "start": "http-server -c-1"
+    "start": "node app"
   },
   "keywords": [],
-  "author": "Maximilian Schwarzmüller",
+  "author": "Joshua Ondieki",
   "license": "ISC",
-  "devDependencies": {
-    "http-server": "^14.1.0",
-    "install": "^0.13.0",
-    "npm": "^8.6.0",
-    "vitest": "^0.9.0"
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "vitest": "^0.30.1"
   }
 }

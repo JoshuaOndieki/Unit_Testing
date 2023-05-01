@@ -1,5 +1,5 @@
 import { it,expect } from "vitest";
-import { add } from "./math";
+import { add } from "../dist/math";
 
 it ("should return sum when given an array of number", ()=>{
     // Arrange

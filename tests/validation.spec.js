@@ -1,4 +1,4 @@
-import { shapingNumber, validateNumber, validateStringNotEmpty } from "./validation"
+import { shapingNumber, validateNumber, validateStringNotEmpty } from "../dist/util/validation"
 import { it,expect,describe} from 'vitest'
 
 describe('test for validateStringNotEmpty ()', ()=>{
