@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - node/install-packages
-      - run: npm build
+      - run: npm run build
   test:
     docker:
       - image: cimg/node:18.16
